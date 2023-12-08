@@ -13,7 +13,9 @@ function DogPics() {
         console.log("setState");
         setImages(data.message);
       });
-  });
+  }, []);
+
+  // useEffect to change parts of webpage outside the components
 
   console.log("render");
 
